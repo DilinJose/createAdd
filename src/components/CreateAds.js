@@ -5,6 +5,7 @@ import mediaImage from "../assests/img/img2.png";
 import Cards from "./Cards";
 
 const CreateAds = () => {
+  
   const cardData = [
     {
       id:1,
@@ -21,7 +22,7 @@ const CreateAds = () => {
   ];
 
   return (
-    <div style={{height:"100vh"}} className=" d-flex justify-content-center align-items-center"> 
+    <div style={{height:"90vh" }} className=" d-flex justify-content-center align-items-center"> 
       {cardData.map(({ image, action, title ,id}) => {
         return <Cards image={image} action={action} title={title} id={id} />
       })}

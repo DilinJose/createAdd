@@ -6,23 +6,19 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import Checkboxes from "./Checkboxes";
 
-const Cards = ({ image, action, title }) => {
+const Cards = ({ image, action, title, id }) => {
   return (
-    <Card
-      className="custom-card"
-      style={{ border: "2px solid black" }}
-      sx={{ maxWidth: 545, margin: "15px" }}
-    >
-        <Checkboxes />
+    <Card className="custom-card" sx={{  padding: "0 15px",margin: "0 15px ",border: "2px solid black" }}>
+      <Checkboxes id={id} />
       <CardActionArea>
         <CardMedia
-          sx={{ padding: "10px" }}
+          sx={{ padding: "10px", border: "2px solid black" }}
           component="img"
-          height="400"
+          height="280"
           image={image}
           alt="green iguana"
         />
-        <CardContent>
+        <CardContent sx={{ border: "2px solid black", }}>
           <Typography
             sx={{ display: "flex", justifyContent: "center", color: "grey" }}
             gutterBottom
@@ -34,7 +30,7 @@ const Cards = ({ image, action, title }) => {
           <Typography
             sx={{ display: "flex", justifyContent: "center" }}
             variant="h6"
-            color="text.secondary"
+            color="text.dark"
           >
             {title}
           </Typography>
