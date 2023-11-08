@@ -114,9 +114,9 @@ function DrawerAppBar(props) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{ p: 1 }}>
-        <Toolbar />
-        {/* <Typography>
+      <Box component="main" className=" createads-main-card" >
+        {/* <Toolbar />
+        <Typography>
         </Typography> */}
       </Box>
     </Box>

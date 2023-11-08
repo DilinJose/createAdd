@@ -8,19 +8,38 @@ import Checkboxes from "./Checkboxes";
 
 const Cards = ({ image, action, title, id }) => {
   return (
-    <Card className="custom-card" sx={{  padding: "0 15px",margin: "0 15px ",border: "2px solid black" }}>
+    <Card
+      className="custom-card"
+      sx={{
+        maxWidth: 345,
+        padding: "0 15px",
+        margin: "0 15px ",
+      
+      }}
+    >
       <Checkboxes id={id} />
       <CardActionArea>
         <CardMedia
-          sx={{ padding: "10px", border: "2px solid black" }}
+          sx={{ padding: "10px" }}
           component="img"
-          height="280"
+          height="250"
           image={image}
           alt="green iguana"
         />
-        <CardContent sx={{ border: "2px solid black", }}>
+        <CardContent
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            padding:"0px"
+          }}
+        >
           <Typography
-            sx={{ display: "flex", justifyContent: "center", color: "grey" }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              color: "grey",
+              margin:"0px"
+            }}
             gutterBottom
             variant="p"
             component="div"
@@ -28,8 +47,12 @@ const Cards = ({ image, action, title, id }) => {
             {action}
           </Typography>
           <Typography
-            sx={{ display: "flex", justifyContent: "center" }}
-            variant="h6"
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              margin:"0px"
+            }}
+            variant="p"
             color="text.dark"
           >
             {title}

@@ -6,3 +6,13 @@
 .custom-card:hover{
 background-color: white;
 }
+.createads-card{
+   margin: 15px;
+}
+.createads-main-card{
+    /* border: 1px solid grey ; */
+    margin-top: 8%;
+}
+.css-19h6407-MuiTypography-root {
+    margin-bottom: 0.1em;
+}
