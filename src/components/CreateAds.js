@@ -34,7 +34,7 @@ const CreateAds = () => {
       navigate("/textadsform");
     } else if (checkedId.includes(2)) {
       navigate("/mediaadsform");
-    } 
+    }
   };
 
   return (
@@ -49,8 +49,8 @@ const CreateAds = () => {
         </div>
         <div className="d-flex justify-content-end m-4 ">
           <Button
+            className="customButton"
             variant="contained"
-            sx={{ width: "13%" }}
             onClick={handleForm}
           >
             Next

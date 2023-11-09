@@ -1,18 +1,58 @@
-.App{
+.App {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-.custom-card:hover{
-background-color: white;
+
+.err-msg {
+    color: red;
 }
-.createads-card{
-   margin: 15px;
+
+.custom-card:hover {
+    background-color: white;
 }
-.createads-main-card{
+
+.createads-card {
+    margin: 15px;
+}
+
+.createads-main-card {
     /* border: 1px solid grey ; */
-    margin-top: 8%;
+    margin-top: 6%;
 }
+
 .css-19h6407-MuiTypography-root {
     margin-bottom: 0.1em;
+}
+
+.customButton {
+    width: 13%;
+}
+
+.text-media-card {
+    border: 1px solid grey;
+}
+
+.img-field {
+    flex: 1;
+    margin: 0px 15px;
+}
+
+.campaign {
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 5px;
+}
+
+.bold-headings {
+    font-size: medium;
+    font-weight: 400;
+    margin: 15px;
+}
+.table-top {
+    border-top-style:solid ;
+    border-top-color:rgb(163, 163, 163) ;
+    border-top-width: 1px;
+}
+.total-size{
+    font-size: small;
 }
