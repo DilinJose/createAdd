@@ -30,7 +30,9 @@ const CreateAds = () => {
   ];
 
   const handleForm = () => {
-    if (checkedId.includes(1)) {
+    if (checkedId.includes(1) && checkedId.includes(2)) {
+      navigate("/mediaadsform");
+    } else if (checkedId.includes(1)) {
       navigate("/textadsform");
     } else if (checkedId.includes(2)) {
       navigate("/mediaadsform");

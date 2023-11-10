@@ -1,14 +1,29 @@
 import react from "react";
 import { PieChart } from "react-minimal-pie-chart";
-const DoughnutChart = () => {
+import Legends from "./Legends";
+const DoughnutChart = ({matrixes}) => {
+
+  const [zero,one,two] = matrixes
+
   const data = [
-    { title: "One", value: 10, color: "#E38627" },
-    { title: "Two", value: 15, color: "#C13C37" },
-    { title: "Three", value: 20, color: "#6A2135" },
+    { title: "Males", value: zero, color: "#FFA500" },
+    { title: "Females", value: one, color: "#3F63B5" },
+    { title: "Unknown", value: two, color: "#1c1c1c" },
   ];
   return (
-    <div>
-      <PieChart lineWidth={30} radius={10} data={data} />;
+    <div className="d-flex" style={{ borderTop: "1px solid grey" }}>
+      <div
+        style={{
+          width: "300px",
+          marginLeft: "5%",
+          flex: 1,
+        }}
+      >
+        <PieChart radius="40" paddingAngle="2" lineWidth={35} data={data} />
+      </div>
+      <div style={{ flex: 1 }}>
+        <Legends />
+      </div>
     </div>
   );
 };

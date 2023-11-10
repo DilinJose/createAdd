@@ -24,6 +24,11 @@ const style = {
   color: "black",
   fontSize:"18px"
 };
+const fontStyle = {
+  textDecoration: "none",
+  color: "#454545",
+  fontSize:"14px"
+};
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -80,12 +85,12 @@ function DrawerAppBar(props) {
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {/* {navItems.map((item) => ( */}
             <Button sx={{ color: "#fff" }}>
-              <Link style={style} to={"/"}>
+              <Link style={fontStyle} to={"/"}>
                 Dashboard
               </Link>
             </Button>
             <Button sx={{ color: "#fff" }}>
-              <NavLink style={style} to={"/createads"}>
+              <NavLink style={fontStyle} to={"/createads"}>
                 {" "}
                 Create Ads
               </NavLink>

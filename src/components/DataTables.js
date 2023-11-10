@@ -1,34 +1,6 @@
 import DataTable from "react-data-table-component";
 
-// const columns = [
-//   {
-//     name: "Title",
-//     selector: (row) => row.title,
-//     sortable: true,
-//   },
-//   {
-//     name: "Year",
-//     selector: (row) => row.year,
-//     sortable: true,
-//   },
-// ];
-
-// const data = [
-//   {
-//     id: 1,
-//     title: "Beetlejuice",
-//     year: "1988",
-//   },
-//   {
-//     id: 2,
-//     title: "Ghostbusters",
-//     year: "1984",
-//   },
-// ];
-
 const DataTables = ({ title, data, columns }) => {
-const a= columns.map(data=>data.selector)
-console.log(a);
 
   const columnTotals = columns.map((column) => {
     if (column.selector) {
@@ -42,7 +14,7 @@ console.log(a);
   });
 
   return (
-    <div className="campaign">
+    <div className="">
       <h6 className="bold-headings">{title}</h6>
       <DataTable className="table-top" columns={columns} data={data} />
       <div className="column-totals d-flex ">
